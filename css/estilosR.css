@@ -1,0 +1,211 @@
+*{
+    margin:0px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+body { 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
+    
+}
+.padre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+    .header {
+        background: url(../img/ninos-jugando-sobre-cesped\ 2460\ 1440\ no\ sino\ 1640.jpg  );
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+                flex-wrap: nowrap;
+     } 
+        .menu{
+            background:rgb(0,0,0,.1);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            height: 100px;
+            align-items: center;
+            border-bottom: 1px solid rgb(255,255,255,.2);
+            
+        }
+            .logo{
+                flex: 1 1 auto;
+                
+            }
+            .logo a{
+                color: yellow;
+                text-decoration: none;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 30px;
+                font-weight: solid;
+                
+            }
+            .logo a:hover {
+                color: yellowgreen;
+            }
+       
+            .nav{
+              flex: 3 1 auto;
+            }
+
+            .nav a{
+                color:white;
+                font-size: 12px;
+                text-transform: uppercase;
+                padding: 0 2px;
+                letter-spacing: 2px;
+            }
+            .nav a {
+                color:yellow;
+                text-decoration: none;
+            }
+            .nav a:hover {
+                color: yellowgreen;
+
+            }
+            .social{
+                flex: 1 1 auto;
+                display:flex ;
+               
+            }
+            .social a {
+                font-size: 18px;
+                padding: 0 2px;
+                color: white;
+            }
+            .social a:hover 
+            { color: white;
+
+            }
+        .texto-principal{
+            color:rgb(226, 235, 236);
+            text-transform: uppercase;
+            font-size: 8px ;
+            letter-spacing: 2px;
+            text-align: justify;
+            background:rgb(0,0,0,.1);
+            display: flex;
+            align-items: center;
+
+
+        }
+            h1{
+               
+            }
+    .section{
+        background: rgba(248, 244, 244, 0.85);
+        display: flex;
+    }
+        .articulos{
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+            
+        }
+            .article{
+                background:white;
+                text-align: justify;
+                flex: 1 1 45%;
+                font-size: 17px;
+                margin: 10px 10px 0px 0px
+                              }
+
+               .article img {
+                width:100% ;
+
+               }
+
+               .article a {
+                color:white;
+                font-size: 13px;
+                padding: 10px;
+                background-color: #000;
+                margin: 10px 10px;
+                display: inline-block;
+               }
+               .article a:hover {
+                background:#546cc3;
+               } 
+               
+            .navegacion{
+                background:#546cc3;
+                flex: 1 1 100%;
+            }
+            .navegacion a {
+                color: #fff;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+        .aside{
+            flex: 1 1 auto;
+            margin: 10px 5px 10px 0px;
+            color:#546cc3
+        }
+        .aside img {
+            width: 100%;
+        }
+            .publicidad{
+                background:#546cc3;
+            }
+    .footer {
+        background: #000;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+        .pie{
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            
+        }
+            .pie a{
+                color: white;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+        /*a partir de 1021px*/
+@media only screen and (max-width: 1010px){
+        /*Los elementos del menu deben mostrarse uno debajo del otro*/
+        .menu{
+            flex-direction: column;
+            height: auto;
+ 
+        }
+    }
+
+/* a partir de 960px */
+@media only screen and (max-width: 960px){
+
+    .section{
+        flex-direction: column;
+     }
+
+/*El aside debe pasar hacia abajo*/
+    .aside{
+        display: flex;
+        flex-direction: column;
+       
+    }
+}
+.aside img {
+    display: flex;
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+/*a partir de 600px los artículos se muestran en una sola columna*/
+@media only screen and (max-width: 600px){
+    .articulos{
+        flex-direction: column;
+    }
+}
+

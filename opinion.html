@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinion</title>
+    <style>
+        /* Estilos CSS  */
+        body {
+            font-family: Arial, sans-serif;
+        }
+    
+        header {
+            background-color: #00ffc3;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        section {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: #F0F0F0;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #00ffc3;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Dejanos tu Opinion!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="juegos.html">Opinión de los Padres</a></li>
+            <li><a href="ubicacion.html">Opinión de los Padres</a></li>
+
+        </ul>
+    </nav>
+    <section>
+    <h2>Agradecemos tu opinión sobre nuestra página y sus contenidos.</h2>
+    <img src="img/opinion.jpg" alt="imagen">
+    </section>
+    <section>
+
+    
+    <h2>Formulario:</h2>
+    <br><br>
+    <form action=""></form>
+    <label for="firstname">Nombre: </label>
+    <input size="30"  type="text"  name="firstname"  placeholder="Ingrese su nombre aqui..">
+    <label for="lastname">Apellido:</label>
+    <input size="30"  type="text"  name="lastname"  placeholder="Ingrese su apellido aqui..">
+    <br><br>
+    <label for="street">Mail:</label>
+    <input type="text" name="addrees" placeholder="Ingrese su email aqui...">
+    <p>Tipo de consulta:
+        <input type="radio" name="rb" value="jugadores" checked> Sobre jugadores
+        <input type="radio" name="rb" value="tecnico"> Sobre Reglas
+        <input type="radio" name="rb" value="otra"> Otra consulta
+    </p>
+    <label for="Comentarios">Consulta</label>
+    <textarea name="Comentarios" cols="30" rows="5" placeholder="Escriba su consulta..."></textarea>
+    <br><br>
+    <input type="submit" value="Enviar">
+    <button type="reset">Reset</button>
+    </form> 
+    </section>
+    <footer>
+        <p>Derechos de autor © 2023. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:contacto@miwebparaniños.com">contacto@miwebparaniños.com</a></p>
+    </footer>
+</body>
+</html>
