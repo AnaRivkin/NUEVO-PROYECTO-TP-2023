@@ -93,9 +93,8 @@ body {
 
 
         }
-            h1{
+            
                
-            }
     .section{
         background: rgba(248, 244, 244, 0.85);
         display: flex;
@@ -139,6 +138,7 @@ body {
                 color: #fff;
                 font-size: 11px;
                 text-transform: uppercase;
+                text-align: center;
                 padding: 0 10px;
                 letter-spacing: 2px;
             }
@@ -179,7 +179,7 @@ body {
 
             }
 
-            }
+            
         /*a partir de 1021px*/
 @media only screen and (max-width: 1010px){
         /*Los elementos del menu deben mostrarse uno debajo del otro*/
