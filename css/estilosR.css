@@ -107,7 +107,7 @@ body {
         }
             .article{
                 background:white;
-                text-align: justify;
+                text-align: center;
                 flex: 1 1 45%;
                 font-size: 17px;
                 margin: 10px 10px 0px 0px
@@ -127,11 +127,11 @@ body {
                 display: inline-block;
                }
                .article a:hover {
-                background:#546cc3;
+                background:#adf7b6;
                } 
                
             .navegacion{
-                background:#546cc3;
+                background:#ffc09f;
                 flex: 1 1 100%;
             }
             .navegacion a {
@@ -151,10 +151,10 @@ body {
             width: 100%;
         }
             .publicidad{
-                background:#546cc3;
+                background:#79addc;
             }
     .footer {
-        background: #000;
+        background: #ffee93;
         display: flex;
         justify-content: center;
         margin-top: 10px;
