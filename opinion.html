@@ -46,34 +46,44 @@
             <div class="formularios">
                 
                 <article class="formulario opinion">
-                    <img src="img/opinion.jpg" alt="familia opina" >
-                    <h4>Dejanos tu opinión sobre la página !</h4>
-                     <h2>Formulario:</h2>
-                        <br><br>
-                        <form action=""></form>
-                        <label for="firstname">Nombre: </label>
-                        <input size="30"  type="text"  name="firstname"  placeholder="Ingrese su nombre aqui..">
+                    <img src="img/opinion.jpg" alt="familia opina">
+                    <h4>¡Déjanos tu opinión sobre la página!</h4>
+                    <h2>Formulario:</h2>
+                    <form action="procesar_formulario.php" method="post">
+                        <label for="firstname">Nombre:</label>
+                        <input type="text" name="firstname" placeholder="Ingrese su nombre aquí.." required>
+                        
                         <label for="lastname">Apellido:</label>
-                        <input size="30"  type="text"  name="lastname"  placeholder="Ingrese su apellido aqui..">
-                        <br><br>
-                        <label for="street">Mail:</label>
-                        <input type="text" name="addrees" placeholder="Ingrese su email aqui...">
-                        <p>Tipo de consulta:
-                            <input type="radio" name="rb" value="jugadores" checked> Sobre jugadores
-                            <input type="radio" name="rb" value="tecnico"> Sobre Reglas
-                            <input type="radio" name="rb" value="otra"> Otra consulta
-                        </p>
-                        <label for="Comentarios">Consulta</label>
-                        <textarea name="Comentarios" cols="30" rows="5" placeholder="Escriba su consulta..."></textarea>
-                        <br><br>
+                        <input type="text" name="lastname" placeholder="Ingrese su apellido aquí.." required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Ingrese su email aquí..." required>
+                        
+                        <fieldset>
+                            <legend>Tipo de consulta:</legend>
+                            <input type="radio" name="consulta" value="jugadores" id="consulta-jugadores" checked>
+                            <label for="consulta-jugadores">Sobre jugadores</label>
+                            
+                            <input type="radio" name="consulta" value="tecnico" id="consulta-tecnico">
+                            <label for="consulta-tecnico">Sobre Reglas</label>
+                            
+                            <input type="radio" name="consulta" value="otra" id="consulta-otra">
+                            <label for="consulta-otra">Otra consulta</label>
+                        </fieldset>
+                        
+                        <label for="comentarios">Consulta:</label>
+                        <textarea name="comentarios" cols="30" rows="5" placeholder="Escriba su consulta..."></textarea>
+                        
                         <input type="submit" value="Enviar">
                         <button type="reset">Reset</button>
-                        </form> 
-                    </article>
+                    </form>
+                </article>
+                
                 
                 <article class="formulario sugerencias ">
                       <h4>Querés sugerirnos alguna salida didáctica para agregar a la página? </h4>
                  </article>
+                 <img src="img/Muchas.jpg"
                 
                
                
