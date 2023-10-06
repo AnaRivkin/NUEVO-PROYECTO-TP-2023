@@ -106,11 +106,12 @@ body {
             flex: 2 1 auto;
             display: flex;
             flex-flow: row wrap;
+        
             
         }
             .article{
                 background:white;
-                text-align: center;
+                text-align: justify;
                 flex: 1 1 45%;
                 font-size: 17px;
                 margin: 10px 10px 0px 0px
