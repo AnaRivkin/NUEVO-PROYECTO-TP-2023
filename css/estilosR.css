@@ -97,7 +97,13 @@ body {
         margin-left: auto;
          margin-right: auto;
     }
-        
+    
+    .contenedor-imagen {
+        max-width: 100%;
+        height: auto;
+    }
+    
+
     .section{
         background: whitesmoke;
         display: flex;
