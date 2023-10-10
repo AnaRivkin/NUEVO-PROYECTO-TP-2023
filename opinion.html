@@ -49,8 +49,8 @@
                 
                 <article class="formulario-opinion">
                     <img src="img/opinion.jpg" alt="familia opina" class="contenedor-imagen"  >
-                    <h4>¡Déjanos tu opinión sobre la página!</h4>
-                    <h2>Formulario:</h2>
+                    <h4 class="centrado">¡Déjanos tu opinión sobre la página!</h4>
+                    <h2 class="centrado">Formulario</h2>
                     <form action="procesar_formulario.php" method="post">
                         <label for="firstname">Nombre:</label>
                         <input type="text" name="firstname" placeholder="Ingrese su nombre aquí.." required>
@@ -77,8 +77,10 @@
                         <textarea name="comentarios" cols="30" rows="5" placeholder="Escriba su consulta..."></textarea>
                         <br>
                         <br>
-                        <input type="submit" value="Enviar">
-                        <input type="reset"></input>
+                        <div class="button-container">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Reset">
+                        </div>
                     </form>
                 </article>
                 

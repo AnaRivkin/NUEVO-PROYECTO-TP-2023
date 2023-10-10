@@ -113,6 +113,15 @@ body {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
+    h4.centrado {
+        text-align: center;
+    }
+
+    h2.centrado {
+        text-align: center;
+    }
+    
+
     input[type="text"], input[type="email"] {
     width: 100%;
     padding: 10px;
@@ -154,6 +163,22 @@ body {
         border-radius: 5px;
         cursor: pointer;
     }
+
+    .button-container {
+        text-align: center; 
+    }
+    
+    input[type="submit"],
+    input[type="reset"] {
+        color: black;
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 5px; /* Agrega espacio entre los botones */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
     /* Fin Estilo para el formulario */
 
     .section{
