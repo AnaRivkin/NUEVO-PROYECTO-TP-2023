@@ -47,20 +47,20 @@
         <section class="section margen-interno ">
             <div class="formularios">
                 
-                <article class="formulario opinion">
+                <article class="formulario-opinion">
                     <img src="img/opinion.jpg" alt="familia opina" class="contenedor-imagen"  >
                     <h4>¡Déjanos tu opinión sobre la página!</h4>
                     <h2>Formulario:</h2>
                     <form action="procesar_formulario.php" method="post">
                         <label for="firstname">Nombre:</label>
                         <input type="text" name="firstname" placeholder="Ingrese su nombre aquí.." required>
-                        
+                        <br>
                         <label for="lastname">Apellido:</label>
                         <input type="text" name="lastname" placeholder="Ingrese su apellido aquí.." required>
-                        
+                        <br>
                         <label for="email">Email:</label>
                         <input type="email" name="email" placeholder="Ingrese su email aquí..." required>
-                        
+                        <br>
                         <fieldset>
                             <legend>Tipo de consulta:</legend>
                             <input type="radio" name="consulta" value="jugadores" id="consulta-jugadores" checked>
@@ -75,9 +75,10 @@
                         
                         <label for="comentarios">Consulta:</label>
                         <textarea name="comentarios" cols="30" rows="5" placeholder="Escriba su consulta..."></textarea>
-                        
+                        <br>
+                        <br>
                         <input type="submit" value="Enviar">
-                        <button type="reset">Reset</button>
+                        <input type="reset"></input>
                     </form>
                 </article>
                 

@@ -102,7 +102,59 @@ body {
         max-width: 100%;
         height: auto;
     }
-    
+
+    /* Estilo para el formulario */
+
+    .formulario-opinion {
+        background-color: #fcf5c7;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+
+    textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+
+    fieldset {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #adf7b6;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="reset"] {
+        background-color: #ffc09f;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    /* Fin Estilo para el formulario */
 
     .section{
         background: whitesmoke;
