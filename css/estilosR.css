@@ -218,6 +218,8 @@ body {
                 text-align: justify;
                 flex: 1 1 45%;
                 font-size: 17px;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+                border-radius: 5px;
                 margin: 10px 10px 0px 0px
                               }
 
