@@ -181,6 +181,27 @@ body {
     
     /* Fin Estilo para el formulario */
 
+    .aside-mapa {
+    background-color:white; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    width: auto;
+    height: auto;
+    }
+
+    .aside-costado {
+    background-color:white; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    width: auto;
+    height: auto;
+    }
+    
+
     .section{
         background: whitesmoke;
         display: flex;
