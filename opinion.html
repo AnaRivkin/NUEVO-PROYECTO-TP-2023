@@ -1,137 +1,258 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> A Jug@r</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
-<link rel="shortcut icon" href="img/IMG-LOGO-A-JUGAR-20230913-WA0007.ico" type="image/x-icon">
-<link rel="stylesheet" href="css/estilosR.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Jug@r</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css" />
+    <link
+      rel="shortcut icon"
+      href="img/IMG-LOGO-A-JUGAR-20230913-WA0007.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/estilosR.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+  </head>
+  <body>
     <div class="padre">
-        <header class="header margen-interno">
-            <div class="menu">
-                <div class="logo"> 
-                   <a href="indexR.html" > <img src="img/lamparita 6082664.jpg" width="40px" alt="logo" > Vamos a Jug@r!</a>
-                </div>
-                <div class="nav">
-                    <a href="indexR.html"> <i class="fa-solid fa-gamepad fa-beat" style="color: #eaf736;"></i>  juegos</a>
-                    <a href="leermas.html"> <i class="fa-solid fa-location-dot fa-beat" style="color: #eaf736;"></i> Leer más</a>
-                    <a href="ubicacion.html"> <i class="fa-solid fa-location-dot fa-beat" style="color: #eaf736;"></i> Ubicación</a>
-                    <a href="#opinion.html">   <i class="fa-solid fa-star fa-beat" style="color: #eaf736;"></i> opinión</a>
-
-                </div>
-                <div class="social">
-                    <div><a href="#"> <i class="fa-brands fa-x-twitter fa-fade" style="color: #eaf736;"></i></a></div>
-                    <div><a href="#"> <i class="fa-brands fa-facebook fa-fade" style="color: #eaf736;"></i>  </a></div>
-                    <div> <a href="#">  <i class="fa-brands fa-instagram fa-fade" style="color: #eaf736;"></i>   </a></div>
-                    
-                </div>
+      <header class="header margen-interno">
+        <div class="menu">
+          <div class="logo">
+            <a href="indexR.html">
+              <img src="img/lamparita 6082664.jpg" width="40px" alt="logo" />
+              Vamos a Jug@r!</a
+            >
+          </div>
+          <div class="nav">
+            <a href="indexR.html">
+              <i class="fa-solid fa-gamepad fa-beat" style="color: #eaf736"></i>
+              juegos</a
+            >
+            <a href="leermas.html">
+              <i
+                class="fa-solid fa-location-dot fa-beat"
+                style="color: #eaf736"
+              ></i>
+              Leer más</a
+            >
+            <a href="ubicacion.html">
+              <i
+                class="fa-solid fa-location-dot fa-beat"
+                style="color: #eaf736"
+              ></i>
+              Ubicación</a
+            >
+            <a href="#opinion.html">
+              <i class="fa-solid fa-star fa-beat" style="color: #eaf736"></i>
+              opinión</a
+            >
+          </div>
+          <div class="social">
+            <div>
+              <a href="#">
+                <i
+                  class="fa-brands fa-x-twitter fa-fade"
+                  style="color: #eaf736"
+                ></i
+              ></a>
             </div>
-            <div class="texto-principal">
-                    <br>
-                    <h1 class="animate__animated animate__zoomIn">Bienvenidos al sitio de propuestas lúdicas y recreativas para toda la familia. Aquí encontrán variedad de formas de divertirse en casa o en parques, museos y miles de lugares más</h1>
-                     
+            <div>
+              <a href="#">
+                <i
+                  class="fa-brands fa-facebook fa-fade"
+                  style="color: #eaf736"
+                ></i>
+              </a>
             </div>
-        </header>
-        <section class="section margen-interno ">
-            <div class="formularios">
-                
-                <article class="formulario-opinion">
-                    <img src="img/opinion.jpg" alt="familia opina" class="contenedor-imagen"  >
-                    <h4 class="centrado">¡Déjanos tu opinión sobre la página!</h4>
-                    <h2 class="centrado">Formulario</h2>
-                    <form action="procesar_formulario.php" method="post">
-                        <label for="firstname">Nombre:</label>
-                        <input type="text" name="firstname" placeholder="Ingrese su nombre aquí.." required>
-                        <br>
-                        <label for="lastname">Apellido:</label>
-                        <input type="text" name="lastname" placeholder="Ingrese su apellido aquí.." required>
-                        <br>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" placeholder="Ingrese su email aquí..." required>
-                        <br>
-                        <fieldset>
-                            <legend>Tipo de consulta:</legend>
-                            <input type="radio" name="consulta" value="jugadores" id="consulta-jugadores" checked>
-                            <label for="consulta-jugadores">Sobre jugadores</label>
-                            
-                            <input type="radio" name="consulta" value="tecnico" id="consulta-tecnico">
-                            <label for="consulta-tecnico">Sobre Reglas</label>
-                            
-                            <input type="radio" name="consulta" value="otra" id="consulta-otra">
-                            <label for="consulta-otra">Otra consulta</label>
-                        </fieldset>
-                        
-                        <label for="comentarios">Consulta:</label>
-                        <textarea name="comentarios" cols="30" rows="5" placeholder="Escriba su consulta..."></textarea>
-                        <br>
-                        <br>
-                        <div class="button-container">
-                            <input type="submit" value="Enviar">
-                            <input type="reset" value="Reset">
-                        </div>
-                    </form>
-                </article>
-                
-                
-                <article class="formulario sugerencias ">
-                      <h4 class="centrado">Querés sugerirnos alguna salida didáctica para agregar a la página? </h4>
-                 </article>
-                <h4 class="centrado">Muchas Gracias por visitarnos!</h4>
-                
-               
-               
-            </nav>
+            <div>
+              <a href="#">
+                <i
+                  class="fa-brands fa-instagram fa-fade"
+                  style="color: #eaf736"
+                ></i>
+              </a>
             </div>
-            <aside class="aside-costado">
-                <div class="publicidad"></div>
-                <h4>Salida recreativa: LA REPÚBLICA DE LOS NIÑOS </h4>
-                
-                <iframe  src="https://www.youtube.com/embed/bFTj5RaI1Xo?si=rjJSqQd1KB7R4Hh2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                
+          </div>
+        </div>
+        <div class="texto-principal">
+          <br />
+          <h1 class="animate__animated animate__zoomIn">
+            Bienvenidos al sitio de propuestas lúdicas y recreativas para toda
+            la familia. Aquí encontrán variedad de formas de divertirse en casa
+            o en parques, museos y miles de lugares más
+          </h1>
+        </div>
+      </header>
+      <section class="section margen-interno">
+        <div class="formularios">
+          <article class="formulario-opinion">
+            <img
+              src="img/opinion.jpg"
+              alt="familia opina"
+              class="contenedor-imagen"
+            />
+            <h4 class="centrado">¡Déjanos tu opinión sobre la página!</h4>
+            <h2 class="centrado">Formulario</h2>
+            <form id="formOpinion">
+              <label for="firstname">Nombre:</label>
+              <input
+                type="text"
+                name="firstname"
+                placeholder="Ingrese su nombre aquí.."
+                id="firstname"
+                required
+              />
+              <br />
+              <label for="lastname">Apellido:</label>
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Ingrese su apellido aquí.."
+                required
+              />
+              <br />
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Ingrese su email aquí..."
+                required
+              />
+              <br />
+              <label for="tipoContacto">¿Para qué querés contactarnos?</label>
+              <select id="tipoContacto" name="tipoContacto" required>
+                <option value="selecciona">
+                  Seleccioná una opción...
+                </option>
+                <option value="consulta">Consulta</option>
+                <option value="opinion">Opinión</option></select
+              ><br />
+              <fieldset>
+                <input
+                  type="radio"
+                  name="consulta"
+                  value="jugadores"
+                  id="consulta-jugadores"
+                />
+                <label for="consulta-jugadores">Sobre jugadores</label>
+                <input
+                  type="radio"
+                  name="consulta"
+                  value="tecnico"
+                  id="consulta-tecnico"
+                />
+                <label for="consulta-tecnico">Sobre Reglas</label>
+                <input
+                  type="radio"
+                  name="consulta"
+                  value="otra"
+                  id="consulta-otra"
+                />
+                <label for="consulta-otra">Otra consulta</label>
+              </fieldset>
 
-                <div class="publicidad"></div>
-                <h4>Salida recreativa: CENTRO CULTURAL DE LA CIENCIA</h4>
-                <iframe src="https://www.youtube.com/embed/h7-vyLGzwl0" title="¡Conocé al Centro Cultural de la Ciencia!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                
-                <div class="publicidad"></div>
-                <h4>Salida recreativa: MUSEO DE CIENCIAS NATURALES </h4>
-                <iframe src="https://www.youtube.com/embed/4Qxmwn7PWow" title="MUSEOS, Museo Argentino de Ciencias Naturales Bernardino Rivadavia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <label id="nombreCampoTexto" for="comentarios">Consulta:</label>
+              <textarea
+                name="comentarios"
+                cols="30"
+                rows="5"
+                placeholder="Escriba su consulta..."
+                id="campoConsulta"
+              ></textarea>
+              <br />
+              <br />
+              <div class="button-container">
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Reset" />
+              </div>
+            </form>
+          </article>
 
-                <div class="publicidad"></div>
-                <h4>Salida recreativa: MALBA </h4>
-                <iframe src="https://www.youtube.com/embed/r0bru8rcMVc" title="Festival #Malba22 por el aniversario del museo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
-                <div class="publicidad"></div>
-                <h4>Salida recreativa: TEATRO COLÓN</h4>
-                <iframe src="https://www.youtube.com/embed/E6kaeF2L5gY" title="Colón para Chicos | Concierto didáctico I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                
-            </aside>
-        </section>
-        <nav class="navegacion">
-            <a href="#indexR.html">Juegos</a>
-            <a href="leermas.html">Leer más</a>
-            <a href="ubicacion.html">Ubicación</a>
-            <a href="opinion.html">Opinión</a>
+          <article class="formulario sugerencias">
+            <h4 class="centrado">
+              Querés sugerirnos alguna salida didáctica para agregar a la
+              página?
+            </h4>
+          </article>
+          <h4 class="centrado">Muchas Gracias por visitarnos!</h4>
+        </div>
+        <aside class="aside-costado">
+          <div class="publicidad"></div>
+          <h4>Salida recreativa: LA REPÚBLICA DE LOS NIÑOS</h4>
 
-           
+          <iframe
+            src="https://www.youtube.com/embed/bFTj5RaI1Xo?si=rjJSqQd1KB7R4Hh2"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+          <div class="publicidad"></div>
+          <h4>Salida recreativa: CENTRO CULTURAL DE LA CIENCIA</h4>
+          <iframe
+            src="https://www.youtube.com/embed/h7-vyLGzwl0"
+            title="¡Conocé al Centro Cultural de la Ciencia!"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+          <div class="publicidad"></div>
+          <h4>Salida recreativa: MUSEO DE CIENCIAS NATURALES</h4>
+          <iframe
+            src="https://www.youtube.com/embed/4Qxmwn7PWow"
+            title="MUSEOS, Museo Argentino de Ciencias Naturales Bernardino Rivadavia"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+          <div class="publicidad"></div>
+          <h4>Salida recreativa: MALBA</h4>
+          <iframe
+            src="https://www.youtube.com/embed/r0bru8rcMVc"
+            title="Festival #Malba22 por el aniversario del museo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+
+          <div class="publicidad"></div>
+          <h4>Salida recreativa: TEATRO COLÓN</h4>
+          <iframe
+            src="https://www.youtube.com/embed/E6kaeF2L5gY"
+            title="Colón para Chicos | Concierto didáctico I"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </aside>
+      </section>
+      <nav class="navegacion">
+        <a href="#indexR.html">Juegos</a>
+        <a href="leermas.html">Leer más</a>
+        <a href="ubicacion.html">Ubicación</a>
+        <a href="opinion.html">Opinión</a>
+      </nav>
     </div>
-    <footer class="footer margen-interno ">
-        <nav class="pie"></nav>
-        <a href="#">Desarrolladores Equipo xx Codo a Codo 2023</a>
+    <footer class="footer margen-interno">
+      <nav class="pie"></nav>
+      <a href="#">Desarrolladores Equipo xx Codo a Codo 2023</a>
     </footer>
-</body>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/form.js"></script>
+  </body>
 </html>
-
