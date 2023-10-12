@@ -27,6 +27,7 @@ form.addEventListener('submit', (e) => {
 
     if (nombre && apellido && email && tipoConsulta && tipoContacto) {
         swal(`Muchas gracias, ${nombre}!`, `Tu ${tipoContactoValue} fue enviada!`, "success");
+        form.reset();
     }
     else {
         swal(`Faltan datos`, `Faltan completar campos del formulario...`, "error");
