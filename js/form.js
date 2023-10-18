@@ -1,7 +1,6 @@
 const form = document.getElementById('formOpinion');
 const tipoContacto = document.getElementById('tipoContacto');
 
-
 tipoContacto.addEventListener('change', (e) => {
     const nombreCampoTexto = document.getElementById('nombreCampoTexto');
     const campoConsulta = document.getElementById('campoConsulta');
