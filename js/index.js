@@ -2,14 +2,22 @@ const body = document.body;
 body.onload = agregarCita();
 
 async function agregarCita() {
-    const res = await fetch('https://frasedeldia.azurewebsites.net/api/phrase');
-    const json = await res.json();
+    try {
+        const url = 'https://quote-garden.onrender.com/api/v3/quotes';
+        const res = await fetch(url);
 
-    const cita = document.getElementById('quote');
-    const autor = document.getElementById('author');
+        const { data } = await res.json();
 
-    // console.log(json)
+        const cita = document.getElementById('quote');
+        const autor = document.getElementById('author');
 
-    cita.textContent = json.phrase;
-    autor.textContent = json.author;
+        console.log(data)
+
+        const nroAleatorio = Math.floor(Math.random() * 10);
+
+        cita.textContent = data[nroAleatorio].quoteText;
+        autor.textContent = data[nroAleatorio].quoteAuthor;
+    } catch (error) {
+        console.log(error);
+    }
 };
