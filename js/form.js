@@ -21,14 +21,24 @@ form.addEventListener('submit', (e) => {
     const apellido = document.getElementById('lastname').value;
     const email = document.getElementById('email').value;
     const tipoContactoValue = tipoContacto.value;
+    const mensaje = document.getElementById('campoConsulta').value;
 
-    const tipoConsulta = document.querySelector('input[name="consulta"]:checked').value;
+    try {
+        const tipoConsulta = document.querySelector('input[name="consulta"]:checked').value;
 
-    if (nombre && apellido && email && tipoConsulta && tipoContacto) {
-        swal(`Muchas gracias, ${nombre}!`, `Tu ${tipoContactoValue} fue enviada!`, "success");
-        form.reset();
-    }
-    else {
-        swal(`Faltan datos`, `Faltan completar campos del formulario...`, "error");
+        if (nombre && apellido && email && tipoConsulta && tipoContacto && mensaje) {
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+                swal(`Muchas gracias, ${nombre}!`, `Tu ${tipoContactoValue} fue enviada!`, "success");
+                form.reset();
+            }
+            else {
+                swal(`Email Inválido`, `Complete correctamente el e-mail...`, "error");
+            }
+        }
+        else {
+            swal(`Faltan datos`, `Faltan completar campos del formulario...`, "error");
+        }
+    } catch (error) {
+        swal(`Seleccione una opción`, `Complete contacto/consulta y el motivo por favor.`, "error");
     }
 })
