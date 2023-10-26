@@ -244,14 +244,21 @@ fieldset{
 
 .article {
     background: white;
+    /* height: max-content; */
     text-align: justify;
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex: 1 1 45%;
     font-size: 17px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     margin: 10px 10px 0px 0px
+}
+
+.article iframe{
+    height: 40vh;
+    width: 80%;
 }
 
 .article img {
@@ -270,6 +277,10 @@ fieldset{
 
 .article a:hover {
     background: #adf7b6;
+}
+
+.leermasjuegos{
+    text-align: center;
 }
 
 .navegacion {
@@ -294,7 +305,7 @@ fieldset{
     justify-items: center; */
     flex: 1 1 auto;
     margin: 10px 5px 10px 0px;
-    color: #546cc3
+    color: #546cc3;
 }
 
 .aside img {
@@ -331,6 +342,11 @@ fieldset{
     text-transform: uppercase;
     padding: 0 10px;
     letter-spacing: 2px;
+}
+
+.section.margen-interno{
+    display: flex;
+    justify-content: space-around;
 }
 
 /*a partir de 1021px*/
