@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de juegos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <h1>Baja de Juegos</h1>
+    <h3>Vamos a Jug@r!</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Mínimo de participantes</th>
+                <th>Máximo de participantes</th>
+                <th>URL imagen</th>
+                <th>URL video</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="juego in juegos">
+                <td>{{ juego.codigo }}</td>
+                <td>{{ juego.nombre }}</td>
+                <td>{{ juego.descripcion }}</td>
+                <td>{{ juego.participantes_min }}</td>
+                <td>{{ juego.participantes_max }}</td>
+                <td>{{ juego.url_imagen }}</td>
+                <td>{{ juego.url_video }}</td>
+                <td><button @click="eliminarJuego(juego.codigo)">Eliminar</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="contenedor-centrado"></div>
+    <a href="crud.html">Menu principal</a> </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="listadoEliminar.js"></script>
+</body>
+
+</html>
